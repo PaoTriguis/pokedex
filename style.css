@@ -1,1 +1,49 @@
+body {
+/*     background-color: crimson;
+ */    
+    font-family: 'Lato', sans-serif;
+    background-color: crimson;
+    text-align: center;
+
+}
+  
+  .logo {
+      width: 400px;
+  }
+  
+  .pokemon-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 20px;
+  }
+  
+  .bloque,
+  .pokemon-block-back {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  
+  .pokemon-block p {
+    margin: 5px;
+  }
+  
+  .name {
+    text-transform: capitalize;    
+    font-weight: bold;
+  }
+   
+  .bloque,
+  .pokemon-block-back {
+    width: 100%;
+    height: 100%;
+ }
+  
+
 
