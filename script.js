@@ -53,9 +53,9 @@ function createPokemon(pokemon) {
 
     const types = document.createElement('p');
     types.classList.add('types');
-    types.textContent = ("Tipo: ") + pokemon.types[1].type.name;
+    types.textContent = ("Tipo: ") + pokemon.types[0].type.name;
 
-    console.log(pokemon.types[1].type.name);
+    console.log(pokemon.types[0].type.name);
 
 
 /*     console.log(pokemon.abilities[1].ability.name);
