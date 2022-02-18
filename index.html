@@ -5,19 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+<!--     ----------------------------------------------------------------------------------------------------------------------------------------- -->
+<!--     Proyecto Pokedex del Grupo 1 - Sabina Ascencio, Pholc Contreras y Paola Ortiz - Dev.F. Febrero 2022 -->
+<!--     ----------------------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <!-- FAVICON -->    
+        <link rel="shortcut icon" href="./img/pokeball.png" type="image/x-icon">
+   <!--  MIS ESTILOS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- JAVASCRIPT -->
+    <script defer src="./script.js"></script>
 </head>
 <body>
     <form action="" onsubmit="buscarPokemon(event)">
         <input type="text" name="pokemon" autocomplete="off">
     </form>
-    <div id="card" class="poke-card">
-        <div data-poke-name>Pokedex</div>
-        <div data-poke-imgcontainer class="img-container">
-            <img data-poke-img class="poke-img" src="./poke-shadow.png"/>
-        </div>
-        <div data-poke-id></div>
+    <img class="logo" src="./img/logo.png" alt="logo">
+    <div class="pokedex__buscar">
+        <form action="" id="buscarPokemon">
+            <input type="text" id="pokemon">
+            <button>
+                <img src="https://cdn-icons-png.flaticon.com/512/1181/1181497.png" alt="pokeball">
+            </button>
+        </form>
+    </div>
+    <div class="pokemon-container"> </div>
+</body>
+</html>
