@@ -8,12 +8,12 @@ function bringPokemon(id) {
     })
 
 }
-
 function bringPokemons(number){
     for (let i = 1; i <= number; i++) {
         bringPokemon(i);
     }
 }
+
 
 function createPokemon(pokemon) {
     const card = document.createElement('div');
@@ -39,6 +39,16 @@ function createPokemon(pokemon) {
     card.appendChild(name);
 
     pokemonContainer.appendChild(card);
+    
 }
-
 bringPokemons(898);
+//---------------------------------------/
+
+pokeForm.addEventListener('submit', e =>{
+    e.preventDefault();
+    let searchPokemon = document.getElementById('pokemon').value;
+    bringPokemon(searchPokemon, true);
+})
+
+
+

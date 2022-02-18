@@ -20,13 +20,17 @@ body {
     margin-right: auto;
     margin-bottom: 40px;
     margin-top: 20px;
+   
   }
   
   .bloque,
   .pokemon-block-back {
+    box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+    width: 120px;
+	  height: 120px;
     border-radius: 20px;
     padding: 10px;
-    background-color: white;
+    background-color: rgb(247, 235, 235);
   }
   
   
@@ -37,13 +41,30 @@ body {
   .name {
     text-transform: capitalize;    
     font-weight: bold;
-  }
+    font-size: 24px;
+    border-top: 1px  coral;
+    border-bottom: 1px solid coral }
    
   .bloque,
   .pokemon-block-back {
-    width: 100%;
+    width: 200px;
     height: 100%;
  }
   
-
-
+/*/----------------/*/
+.img-poke {
+  max-width: 100%;
+  max-height: 100%;
+ }
+ .poke-button {
+  height: 40px;
+  width: 40px;
+  border-radius: 100% ;
+ }
+ input{
+   border-radius: 20px;
+  padding: 10px 10px;
+  border:1px solid coral;
+  transition:0.25s ;
+ }
+ /*-------*/
