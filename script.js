@@ -5,8 +5,8 @@ function bringPokemon(id) {
     .then(response => response.json())
     .then(data => {
         createPokemon(data);
+        console.log(data)
     })
-
 }
 
 function bringPokemons(number){
@@ -14,6 +14,7 @@ function bringPokemons(number){
         bringPokemon(i);
     }
 }
+
 
 function createPokemon(pokemon) {
     const card = document.createElement('div');
@@ -34,11 +35,43 @@ function createPokemon(pokemon) {
     name.classList.add('name');
     name.textContent = pokemon.name
 
+    const weight = document.createElement('p');
+    weight.classList.add('weight');
+    weight.textContent = ("Peso: ") + pokemon.weight
+
+    const abilitiesTitle = document.createElement('h4');
+    abilitiesTitle.classList.add('abilitiesTitle');
+    abilitiesTitle.textContent = ("Habilidades: ");
+
+    const abilitiesOne = document.createElement('p');
+    abilitiesOne.classList.add('abilitiesOne');
+    abilitiesOne.textContent = pokemon.abilities[0].ability.name;
+
+    const abilitiesTwo = document.createElement('p');
+    abilitiesTwo.classList.add('abilitiesTwo');
+    abilitiesTwo.textContent = pokemon.abilities[1].ability.name;
+
+    const types = document.createElement('p');
+    types.classList.add('types');
+    types.textContent = ("Tipo: ") + pokemon.types[1].type.name;
+
+    console.log(pokemon.types[1].type.name);
+
+
+/*     console.log(pokemon.abilities[1].ability.name);
+ */
     card.appendChild(spriteContainer);
     card.appendChild(number);
     card.appendChild(name);
-
+    card.appendChild(weight);
+    card.appendChild(abilitiesTitle);
+    card.appendChild(abilitiesOne);
+    card.appendChild(abilitiesTwo);
+    card.appendChild(types);
+ 
     pokemonContainer.appendChild(card);
 }
 
 bringPokemons(898);
+
+
