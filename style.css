@@ -1,7 +1,24 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+=======
+form {
+  width: 200px;
+  margin: 20px auto;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+}
+
+button {
+  background-color: transparent;
+  border-color: transparent;
+  width: 10%;
+>>>>>>> 058e319afd187615eb7892c0cbbc6cefb2fd202a
 }
 
 body {
@@ -50,5 +67,7 @@ body {
     height: 100%;
  }
   
-
+ .ventana{
+  display:none;
+}
 

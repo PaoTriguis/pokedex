@@ -72,6 +72,13 @@ function createPokemon(pokemon) {
     pokemonContainer.appendChild(card);
 }
 
+const buscarPokemon = event => {
+    event.preventDefault();
+    const { value } = event.target.pokemon;
+    fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}`)
+        .then(data => data.json())
+        .then(response => renderPokemonData(response))
+        .catch(err => renderNotFound())
+}
+
 bringPokemons(898);
-
-
